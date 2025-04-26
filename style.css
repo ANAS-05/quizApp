@@ -115,9 +115,26 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.card.visible {
+  opacity: 1;
+  visibility: visible;
+  text-align: center;
+  font-size: 1.5rem;
+  button {
+    padding: 1rem;
+  }
+}
+.resultsDiv {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 img {
   object-fit: cover;
   min-height: 100%;
+}
+button {
+  cursor: pointer;
 }
 .buttons-section {
   display: flex;
@@ -163,4 +180,8 @@ img {
 .options > div > :nth-child(2) {
   width: 90%;
   text-align: center;
+}
+
+.green{
+  border: 2px solid green;
 }
